@@ -1,5 +1,5 @@
 - header
-- skills section
+- tools tinker /skills
 - projects
 - connect with me section
 - footer with a motivating hungy line
