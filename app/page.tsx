@@ -25,8 +25,8 @@ const page = () => {
           </div>
 
           <div className="pt-2 md:pt-0 md:pl-3 flex flex-col  ">
-            <h1 className="text-3xl font-semibold m-0 p-0 ">Vinit kumar</h1>
-            <p className="text-lg">Fullstack dev</p>
+            <h1 className="text-3xl font-semibold m-0 p-0 font-playfair mb-1 ">Vinit kumar</h1>
+            <p className="text-lg text-neutral-300 pl-1">Fullstack dev</p>
             {/* <ul className="flex gap-2 text-sm flex-wrap ">
               <li>Ts</li>
               <li>Next</li>
@@ -37,7 +37,7 @@ const page = () => {
               <li>supabase</li>
               <li>prisma</li>
             </ul> */}
-            <p className="text-sm text-neutral-400">I build and ship products at high speed, putting in the hours to turn ideas into working software</p>
+            <p className="text-sm text-neutral-400 pl-1">I build and ship products at high speed, putting in the hours to turn ideas into working software</p>
           </div>
         </div>
       </div>
