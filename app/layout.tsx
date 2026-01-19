@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Playfair_Display,Instrument_Serif } from "next/font/google";
+import { Geist, Geist_Mono,Playfair_Display,Instrument_Serif, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
@@ -28,6 +28,12 @@ const instrumentSerif = Instrument_Serif({
   weight:["400"],
 });
 
+const robotoSlab = Roboto_Slab({
+  variable: "--font-roboto-slab",
+  subsets: ["latin"],
+  weight:["400"],
+})
+
 export const metadata: Metadata = {
   title: "Vinit kumar",
   description: "",
@@ -41,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${instrumentSerif.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${instrumentSerif.variable} ${robotoSlab.variable} antialiased`}
       >
          <ThemeProvider 
             attribute="class"

@@ -78,6 +78,11 @@
   font-weight:400;
 }
 
+.roboto-slab{
+  font-family: var(--font-roboto-slab);
+  font-weight:400;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
