@@ -48,39 +48,47 @@
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
 }
 
-  @keyframes marquee {
+@keyframes marquee {
   from {
     transform: translateX(0);
-    }
+  }
   to {
     transform: translateX(calc(-100% - var(--gap)));
-    }
   }
+}
 
-  @keyframes marquee-vertical {
+@keyframes marquee-vertical {
   from {
     transform: translateY(0);
-    }
+  }
   to {
     transform: translateY(calc(-100% - var(--gap)));
-    }
   }
-
+}
 
 .font-playfair {
   font-family: var(--font-playfair-display);
-  font-weight:400;
-  font-style:italic;
+  font-weight: 400;
+  font-style: italic;
 }
 
-.instrument-serif{
+.instrument-serif {
   font-family: var(--font-instrument-serif);
-  font-weight:400;
+  font-weight: 400;
 }
 
-.roboto-slab{
+.roboto-slab {
   font-family: var(--font-roboto-slab);
-  font-weight:400;
+  font-weight: 400;
+}
+
+.bg-dots {
+  background-image: radial-gradient(
+    circle,
+    rgb(115 115 115 / 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 7px 7px;
 }
 
 :root {
