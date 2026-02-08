@@ -1,8 +1,10 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import Stack from "@/components/comonent/stack";
 import Project from "@/components/comonent/project";
 import Social from "@/components/comonent/social"
+
 
 const page = () => {
   return (
@@ -15,6 +17,7 @@ const page = () => {
         </div>
       </div>
 
+
       {/* top section */}
       <div className="max-w-2xl mx-auto border-x-2 border-neutral-800 border-dashed  py-6 px-4">
         <div className=" border-x  rounded-2xl border-neutral-600/70 p-6  border-t border-t-neutral-600/40">
@@ -25,7 +28,7 @@ const page = () => {
                 width={80}
                 height={80}
                 alt="vinit pic"
-                className="rounded-[12px]  md:w-full grayscale  hover:rotate-1 transition-all duration-200 "
+                className="rounded-[12px]  md:w-full grayscale  hover:rotate-3 transition-all duration-200 "
               />
             </div>
 

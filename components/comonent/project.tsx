@@ -175,7 +175,7 @@ const Project = () => {
         return (
           <div
             key={i}
-            className="  w-full  border border-neutral-800 rounded-xl cursor-pointer group pt-2 hover:bg-linear-to-b from-sky-400 via-[#0A0A0A] to-[#0A0A0A]  transition-all duration-300 "
+            className="  w-full  border border-neutral-800 rounded-xl cursor-pointer group pt-2 hover:bg-linear-to-b from-purple-400 via-[#0A0A0A] to-[#0A0A0A]  transition-all duration-300 "
           >
             <div className="w-full flex justify-center mb-2    ">
               <Image
