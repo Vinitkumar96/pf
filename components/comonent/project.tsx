@@ -175,20 +175,20 @@ const Project = () => {
         return (
           <div
             key={i}
-            className="  w-full  border border-neutral-800 rounded-xl cursor-pointer "
+            className="  w-full  border border-neutral-800 rounded-xl cursor-pointer group pt-2 hover:bg-linear-to-b from-sky-400 via-[#0A0A0A] to-[#0A0A0A]  transition-all duration-300 "
           >
-            <div className="w-full ">
+            <div className="w-full flex justify-center mb-2    ">
               <Image
                 src={project.thumbnail}
                 width="300"
                 height="100"
                 alt="project pfp"
-                className="w-full rounded-t-xl"
+                className="w-[80%] rounded-t-xl translate-y-4 group-hover:-translate-y-0.5 transform transition-all duration-300 group-hover:shadow-2xl shadow-black  "
               />
             </div>
             <div>
               <div className="p-2">
-                <h1 className="text-xl instrument-serif">{project.heading}</h1>
+                <h1 className="text-xl instrument-serif py-1">{project.heading}</h1>
                 <p className="text-sm text-neutral-300 roboto-slab">
                   {project.tools.map((tool, index) => {
                     return (

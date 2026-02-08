@@ -2,20 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 import Stack from "@/components/comonent/stack";
 import Project from "@/components/comonent/project";
+import Social from "@/components/comonent/social"
 
 const page = () => {
   return (
-    <div className=" w-full min-h-screen py-4 instrument-serif max-md:p-1">
-      <div className=" w-full border-y border-neutral-800   ">
-        <div className=" relative max-w-2xl mx-auto bg-gray-800/10 py-18 text-center instrument-serif text-2xl  bg-dots my-2   ">
-          <p className="brightness-200 absolute top-[40%] left-[50%]">
+    <div className=" w-full min-h-screen py-6 instrument-serif max-md:p-1">
+      <div className=" w-full border-y-2 border-neutral-800 border-dashed   ">
+        <div className=" relative max-w-2xl mx-auto bg-gray-800/10 py-18 text-center instrument-serif text-2xl  bg-dots my-2">
+          <p className="brightness-200 absolute top-[40%] left-[50%] ">
             wasupppp ?
           </p>
         </div>
       </div>
 
       {/* top section */}
-      <div className="max-w-2xl mx-auto border-x border-neutral-800 py-6 px-4">
+      <div className="max-w-2xl mx-auto border-x-2 border-neutral-800 border-dashed  py-6 px-4">
         <div className=" border-x  rounded-2xl border-neutral-600/70 p-6  border-t border-t-neutral-600/40">
           <div className="flex flex-col md:flex-row">
             <div className="flex-1 border border-border rounded-[12px] p-[4px] cursor-pointer hover:brightness-90 transition duration-300 max-md:w-fit">
@@ -24,7 +25,7 @@ const page = () => {
                 width={80}
                 height={80}
                 alt="vinit pic"
-                className="rounded-[12px]  md:w-full grayscale "
+                className="rounded-[12px]  md:w-full grayscale  hover:rotate-1 transition-all duration-200 "
               />
             </div>
 
@@ -59,22 +60,23 @@ const page = () => {
       </div>
 
       {/* Tools section */}
-      <div className="max-w-2xl mx-auto border-x border-neutral-800 py-2 px-4">
+      <div className="max-w-2xl mx-auto border-x-2 border-neutral-800 border-dashed  py-2 px-4">
         <div className=" mb-10 ">
           <h1 className="text-xl instrument-serif mb-2 ml-4">
             Tools I Tinker With
           </h1>
           <Stack />
-          <div className="ml-4 text-xl">
-            <p>Socials connect</p>
+          <div className="text-xl">
+            <p className="instrument-serif mb-2 ml-4">Socials connect</p>
+            <Social/>
           </div>
         </div>
       </div>
 
       {/* projects section */}
 
-      <div className=" w-full border-y border-neutral-800   ">
-        <div className="max-w-2xl mx-auto border-x border-neutral-800 py-6 px-4">
+      <div className=" w-full border-y-2 border-neutral-800 border-dashed    ">
+        <div className="max-w-2xl mx-auto border-x-2 border-neutral-800 border-dashed py-6 px-4">
           <div className="flex justify-between items-center px-4 pb-6 ">
             <h1 className="text-2xl font-bold instrument-serif">Projects</h1>
             <Link href={"/proj"}>
