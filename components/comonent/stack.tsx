@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa6";
 const stackList = [
   {
     name:"MongoDB",
-    ic:<DiMongodb color="green" />
+    ic:<DiMongodb color="#00EE64" />
   },
   {
     name:"Express",
@@ -23,11 +23,11 @@ const stackList = [
   },
   {
     name:"Node",
-    ic:<FaNodeJs color="green"/>
+    ic:<FaNodeJs color="#5BAC47"/>
   },
   {
     name:"Typescript",
-    ic:<SiTypescript color="#2B7FFF"/>
+    ic:<SiTypescript color="#3178C6"/>
   },
   {
     name:"Nextjs",
@@ -35,7 +35,7 @@ const stackList = [
   },
   {
     name:"PostgresSQL",
-    ic:<BiLogoPostgresql color="#2B7FFF"/>
+    ic:<BiLogoPostgresql color="#336791"/>
   },
   {
     name:"Prisma",
@@ -59,7 +59,7 @@ const stackList = [
   },
   {
     name:"React Native",
-    ic:<FaReact />
+    ic:<FaReact color="#58C4DC" />
   },
   {
     name:"Expo",
@@ -69,16 +69,20 @@ const stackList = [
     name:"git/github",
     ic:<FaGithub/>
   },
+  {
+    name:"Postman",
+    ic:<SiPostman color="#F76935"/>
+  }
 
 ]
 
 const Stack = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center space-x-1 md:space-x-4 space-y-2  md:space-y-2 border-x  rounded-2xl border-neutral-600/70 p-2  border-t border-t-neutral-600/40 mb-4 md:pt-6 pt-4 px-1">
+    <div className="flex flex-wrap justify-center items-center rounded-2xl border-neutral-600/70 p-2  border-t border-t-neutral-600/40 mb-4 md:pt-6 pt-4 px-1">
      {
       stackList.map((s,i) => {
         return(
-          <div key={i} className="bg-[#0A0A0A] rounded-xl px-4 py-2 flex items-center gap-0.5  border cursor-pointer border-dashed hover:border-neutral-600 transition-all  ">
+          <div key={i} className="bg-[#0A0A0A] rounded-xl p-1 m-1 flex items-center gap-1  border cursor-pointer border-dashed hover:border-neutral-600 transition-all  ">
             {s.ic}
             <p className="text-[12px] font-mono">{s.name} </p>
           </div>
