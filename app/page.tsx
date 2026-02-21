@@ -4,11 +4,12 @@ import Link from "next/link";
 import Stack from "@/components/comonent/stack";
 import Project from "@/components/comonent/project";
 import Social from "@/components/comonent/social"
+import FooterVinit from "@/components/comonent/footerVinit";
 
 
 const page = () => {
   return (
-    <div className=" w-full min-h-screen py-6 instrument-serif max-md:p-1">
+    <div className=" w-full min-h-screen pt-6 instrument-serif max-md:p-1 pb-0">
       <div className=" w-full border-y-2 border-neutral-800 border-dashed   ">
         <div className=" relative max-w-2xl mx-auto bg-gray-800/10 py-18 text-center instrument-serif text-2xl  bg-dots my-2">
           <p className="brightness-200 absolute top-[40%] left-[50%] ">
@@ -63,7 +64,8 @@ const page = () => {
       </div>
 
       {/* Tools section */}
-      <div className="max-w-2xl mx-auto border-x-2 border-neutral-800 border-dashed  py-2 px-4">
+      <div className="w-full border-t-2 border-dashed">
+      <div className="max-w-2xl mx-auto border-x-2 border-neutral-800 border-dashed   pb-1 pt-6 px-4">
         <div className=" mb-10 ">
           <h1 className="text-xl instrument-serif mb-2 ml-4">
             Tools I Tinker With
@@ -75,16 +77,17 @@ const page = () => {
           </div>
         </div>
       </div>
+      </div>
 
       {/* projects section */}
 
       <div className=" w-full border-y-2 border-neutral-800 border-dashed    ">
         <div className="max-w-2xl mx-auto border-x-2 border-neutral-800 border-dashed py-6 px-4">
-          <div className="flex justify-between items-center px-4 pb-6 ">
+          <div className="flex justify-between items-center px-4 py-3 mb-2 border-t-2 border-dashed ">
             <h1 className="text-2xl font-bold instrument-serif">Projects</h1>
             <Link href={"/proj"}>
               <div className="flex gap-2">
-                <p className="text-sm cursor-pointer text-neutral-400 hover:text-neutral-300 transition-all font-mono bg-neutral-800 px-3 rounded py-1.5 ">
+                <p className="text-sm cursor-pointer text-neutral-400 hover:text-neutral-100 transition-all font-mono bg-neutral-900 px-3 rounded-sm py-1.5 ">
                   View more{" "}
                 </p>
               </div>
@@ -94,6 +97,8 @@ const page = () => {
           <Project />
         </div>
       </div>
+
+      <FooterVinit/>
     </div>
   );
 };
